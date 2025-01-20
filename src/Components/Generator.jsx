@@ -61,7 +61,7 @@ function updateMuscles(muscleGroup){
           setmuscles([])
           setPoison(type)
 
-        }} className={'bg-slate-950 border  duration-200 px-4 hover:border-blue-600 py-3 rounded-lg mx-1 ' + (type === poison ? ' border-blue-600' : ' border-blue-400')} key={typeIndex}>
+        }} className={'bg-slate-950 border  duration-200 px-4 hover:border-blue-600 py-3 rounded-lg mx-1 ' + (type === poison ? ' border-blue-300' : ' border-blue-100')} key={typeIndex}>
 
         <p className='capitalize'>{type.replaceAll('_', " ")}</p>
         
@@ -108,7 +108,7 @@ function updateMuscles(muscleGroup){
     {Object.keys(SCHEMES).map((scheme , schemeIndex) =>
     {
       return (
-        <button onClick={()=>{setGoal(scheme)}} className={'bg-slate-950 border px-3 duration-200  hover:border-blue-600 py-3 rounded-lg mx-1 ' + (scheme === goal ? ' border-blue-600' : ' border-blue-400')} key={schemeIndex}>
+        <button onClick={()=>{setGoal(scheme)}} className={'bg-slate-950 border px-3 duration-200  hover:border-blue-600 py-3 rounded-lg mx-1 ' + (scheme === goal ? ' border-blue-600' : ' border-blue-100')} key={schemeIndex}>
 
         <p className='capitalize'>{scheme.replaceAll('_', " ")}</p>
         
